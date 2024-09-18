@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-4",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch": "tailwindcss build -i ./styles.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
+}

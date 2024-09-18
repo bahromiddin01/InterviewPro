@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .apply-btn {
+        @apply lg:py-2.5 px-4 py-2 lg:px-8 bg-[#05A105] rounded-[30px] font-semibold text-white transition duration-200
+    }
+
+    .apply-btn:hover {
+        @apply bg-green-700
+    }
+
+    .link-btn {
+        @apply hover:text-green-600 transition duration-200 font-semibold
+    }
+
+    .main-title {
+        @apply text-[30px] font-semibold text-center
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-title {
+        @apply text-[30px] lg:text-[52px] font-semibold
+    }
+
+    .card {
+        @apply flex flex-col gap-10 lg:flex-row justify-between mx-6 lg:mx-24 p-8 bg-white rounded-[20px] border-2 border-gray-200
+    }
+
+    .card-info {
+        @apply flex flex-col gap-6 lg:justify-evenly w-[100%] lg:w-[40%]
+    }
+
+    .card-image {
+        @apply bg-[#f9f8f5] rounded-[20px]
+    }
+
+    .third-title {
+        @apply text-[20px] lg:text-[36px] text-[#03390F] font-medium
+    }
+
+    .text-size {
+        @apply lg:text-[24px] font-normal
+    }
+
+    .statistics-graph {
+        @apply h-[60px] rounded-[8px] font-semibold text-[15px] text-white bg-[#525252] leading-[60px] text-right pr-6
+    }
+
+    .statistics-items {
+        @apply flex gap-8
+    }
+
+    .statistics-item {
+        @apply text-[15px] font-medium w-[100px] leading-[60px]
+    }
+
+}
