@@ -295,7 +295,7 @@
 
     /* Start of Top companies section styles */
     .top-companies__section {
-        @apply lg:mx-24 xl:mx-80 mx-8 flex lg:my-32 flex-col items-center gap-9 lg:gap-20
+        @apply lg:mx-24 xl:mx-80 mx-5 flex lg:my-32 flex-col items-center gap-9 lg:gap-20
     }
 
     .top-companies__list {

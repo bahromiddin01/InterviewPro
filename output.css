@@ -1762,8 +1762,8 @@ video {
 /* Start of Top companies section styles */
 
 .top-companies__section {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
