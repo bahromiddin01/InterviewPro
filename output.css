@@ -1987,7 +1987,8 @@ video {
   background-color: rgb(7 54 48 / var(--tw-bg-opacity));
   padding-top: 3rem;
   padding-bottom: 3rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -2105,7 +2106,7 @@ video {
 
 .footer-section__menu-list {
   margin-left: 2.5rem;
-  margin-right: 7rem;
+  margin-right: 6rem;
   display: flex;
   justify-content: space-between;
 }
@@ -2190,11 +2191,18 @@ video {
 
 .footer-section__copyright-items {
   font-family: Inter, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(102 112 133 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .footer-section__copyright-items {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* End of Footer section styles */
@@ -2521,6 +2529,10 @@ video {
 
 .mr-20 {
   margin-right: 5rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
 }
 
 .mr-28 {
@@ -3853,6 +3865,10 @@ video {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .leading-8 {

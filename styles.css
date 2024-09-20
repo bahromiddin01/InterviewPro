@@ -349,7 +349,7 @@
 
     /* Start of CTA section styles */
     .cta-section {
-        @apply flex flex-col gap-3 lg:gap-10 bg-customDeepGreen relative py-12 lg:py-32 pl-8 lg:pl-24 mx-3 lg:mx-5 xl:mx-24 my-5 lg:my-28 rounded-2xl lg:rounded-[32px]
+        @apply flex flex-col gap-3 lg:gap-10 bg-customDeepGreen relative py-12 lg:py-32 px-4 lg:pl-24 mx-3 lg:mx-5 xl:mx-24 my-5 lg:my-28 rounded-2xl lg:rounded-[32px]
     }
 
     .cta-section__title {
@@ -380,7 +380,7 @@
     }
 
     .footer-section__menu-list {
-        @apply flex lg:gap-12 justify-between ml-10 lg:ml-0 mr-28 lg:mr-0
+        @apply flex lg:gap-12 justify-between ml-10 lg:ml-0 mr-24 lg:mr-0
     }
 
     .footer-section__menu-items {
@@ -404,7 +404,7 @@
     }
 
     .footer-section__copyright-items {
-        @apply text-base font-normal font-inter text-[#667085]
+        @apply text-sm lg:text-base font-normal font-inter text-[#667085]
     }
 
     /* End of Footer section styles */
