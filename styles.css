@@ -268,7 +268,7 @@
     }
 
     .pricing-section__card-item-2 {
-        @apply text-[6px] lg:text-sm w-[60px] lg:w-full font-semibold
+        @apply text-[6px] lg:text-sm w-9/12 lg:w-full font-semibold
     }
 
     .pricing-section__features-box {
