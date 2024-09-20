@@ -14,38 +14,44 @@
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Interview faang</title>
 </head>
 
-<body class="bg-[#F9F8F5]">
+<body class="lg:bg-[#F9F8F5] bg-white">
+    
     <!-- Start of Navigation section -->
-    <div class="xl:container px-4 xl:px-0 mx-auto">
-        <div class="flex justify-between items-center md:pt-6 pt-2 xl:px-14">
-            <div class="flex items-center lg:gap-12 gap-4">
-                <div class="flex items-center gap-2">
+    <div class="xl:container mx-auto">
+        <div class="navigation-section">
+            <div class="navigation-section__logo-menu__container">
+                <div class="navigation-section__logo">
                     <img src="./images/logo-image.svg" alt="Logomark image">
-                    <h3 class="font-bold font-archivo">InterviewPro</h3>
+                    <h3 class="text-lg font-bold font-archivo">InterviewPro</h3>
                 </div>
-                <div class="lg:gap-10 gap-4 list-none hidden md:flex">
-                    <li class="link-btn">
+                <div class="navigation-section__menu-list">
+                    <li class="navigation-section__menu-link">
                         <a href="#how-works">How it works</a>
                     </li>
-                    <li class="link-btn">
-                        <a href="#">Membership</a>
+                    <li class="navigation-section__menu-link">
+                        <a href="#pricing">Membership</a>
                     </li>
-                    <li class="link-btn">
+                    <li class="navigation-section__menu-link">
                         <a href="#testimonials">Testimonials</a>
                     </li>
-                    <li class="link-btn">
-                        <a href="#">FAQ</a>
+                    <li class="navigation-section__menu-link">
+                        <a href="#faq">FAQ</a>
                     </li>
                 </div>
             </div>
-            <div class="md:flex lg:gap-10 gap-4 items-center hidden">
-                <a class="link-btn" href="#">Log in</a>
-                <button class="apply-btn" type="submit">Apply now</button>
+            <div class="navigation-section__login-buttons">
+                <a class="navigation-section__menu-link" href="#">Log in</a>
+                <button class="primary-btn" type="submit">Apply now</button>
             </div>
             <div class="block md:hidden">
                 <i class="fa-solid fa-bars text-[25px]"></i>
@@ -56,22 +62,18 @@
 
     <!-- Start of Header section -->
     <div class="container mx-auto">
-        <div class="px-4 flex flex-col items-center gap-7 pt-16">
-            <h1 class="main-title md:text-[40px] lg:leading-[75px] lg:text-[64px]">Where software engineering
-                <br> <span class="text-[#05a105]">careers</span> about built
-            </h1>
-            <p class="text-center lg:px-[25%] px-8">Prepare for technical interviews with industry professionals from
-                top
-                FAANG companies. Gain the
+        <div class="header-section__info">
+            <h1 class="header-section__title">Where software engineering <br> <span
+                    class="text-customGreen">careers</span> about built</h1>
+            <p class="header-section__text">
+                Prepare for technical interviews with industry professionals from top FAANG companies. Gain the
                 confidence and skills you need to land your dream job.</p>
-            <div class="flex sm:flex-row flex-col items-center gap-5">
-                <button class="apply-btn" type="submit">Apply now</button>
-                <button
-                    class="apply-btn py-2 hover:bg-white hover:text-[#05a105] hover:border-[#05a105] bg-white text-black border-black border-2 box-border"
-                    type="submit">Watch demo</button>
+            <div class="header-section__buttons">
+                <button class="primary-btn" type="submit">Apply now</button>
+                <button class="secondary-btn" type="submit">Watch demo</button>
             </div>
         </div>
-        <div class="grid grid-cols-2 items-center md:flex md:flex-row pt-9 justify-center gap-[1rem] px-4">
+        <div class="header-section__images">
             <div>
                 <img src="./images/banner-image-1.svg" alt="Banner image">
             </div>
@@ -82,165 +84,162 @@
                 <div>
                     <img src="./images/banner-image-3.svg" alt="Banner image">
                 </div>
-                <div class="absolute bg-gray-200 p-5 rounded-[15px] bottom-5 left-5">
-                    <p class="font-semibold text-gray-700">World-class mentorship from senior FAANG <br> engineers for
-                        students to land their next dream role</p>
-                </div>
+                <p class="header-section__image-text">World-class mentorship from senior FAANG <br> engineers for
+                    students to land their next dream role
+                </p>
             </div>
         </div>
-        <div
-            class="lg:mx-12 lg:px-14 flex flex-col lg:flex-row items-center gap-5 lg:gap-14 border-y-2 border-gray-300 my-14 py-2">
-            <div>
-                <p class="font-semibold">Experts from the top tech companies</p>
-            </div>
-            <div class="flex gap-6 lg:gap-14 overflow-x-scroll scrollbar-hide w-[100%] lg:w-[75%]">
+        <div class="header-section__brands">
+            <p class="header-section__brands-text">Experts from the top tech companies</p>
+            <div class="header-section__brands-images">
                 <img src="./images/brand-image-1.svg" alt="Brand image">
                 <img src="./images/brand-image-2.svg" alt="Brand image">
                 <img src="./images/brand-image-3.svg" alt="Brand image">
                 <img src="./images/brand-image-4.svg" alt="Brand image">
                 <img src="./images/brand-image-5.svg" alt="Brand image">
-                <img src="./images/brand-image-6.svg" alt="Brand image">    
-                <img src="./images/brand-image-7.svg" alt="Brand image">
-                <img src="./images/brand-image-8.svg" alt="Brand image">
+                <img class="filter grayscale" src="./images/brand-image-6.svg" alt="Brand image">
+                <img class="filter grayscale" src="./images/brand-image-7.svg" alt="Brand image">
+                <img class="filter grayscale" src="./images/brand-image-8.svg" alt="Brand image">
             </div>
         </div>
     </div>
     <!-- End of Header section -->
 
-    <!-- Start of Interview section -->
+    <!-- Start of How it works section -->
     <div class="container mx-auto" id="how-works">
-        <h2 class="section-title mb-8 text-center">How it works here at <br> <span
-                class="text-[#05a105]">interviewPro</span></h2>
-        <div class="flex flex-col gap-8 my-10">
-            <div class="card">
-                <div class="card-info">
-                    <h3 class="third-title">Choose Your Interview Focus</h3>
-                    <p class="text-size">Tailor your mock interview to your needs, focusing on coding, system design, or
+        <h2 class="secondary-title text-center">How it works here at <br> <span
+                class="text-customGreen">interviewPro</span></h2>
+        <div class="how-it-works-section">
+            <div class="how-it-works-section__card">
+                <div class="how-it-works-section__card-info">
+                    <h3 class="how-it-works-section__card-title">Choose Your Interview Focus</h3>
+                    <p class="how-it-works-section__card-text">Tailor your mock interview to your needs, focusing on
+                        coding, system design, or
                         behavioral
                         questions.</p>
                     <div>
-                        <button class="apply-btn" type="submit">Apply now</button>
+                        <button class="primary-btn" type="submit">Apply now</button>
                     </div>
                 </div>
-                <div class="card-image">
+                <div class="how-it-works-section__card-image">
                     <img src="./images/interview-image-1.svg" alt="Interview item image">
                 </div>
             </div>
-            <div class="card">
-                <div class="card-info">
-                    <h3 class="third-title">Select Your Interviewer's Background</h3>
-                    <p class="text-size">Pick an interviewer with experience at top tech companies, aligned with your
+            <div class="how-it-works-section__card">
+                <div class="how-it-works-section__card-info">
+                    <h3 class="how-it-works-section__card-title">Select Your Interviewer's Background</h3>
+                    <p class="how-it-works-section__card-text">Pick an interviewer with experience at top tech
+                        companies, aligned with your
                         career goals.</p>
                     <div>
-                        <button class="apply-btn" type="submit">Apply now</button>
+                        <button class="primary-btn" type="submit">Apply now</button>
                     </div>
                 </div>
-                <div class="card-image px-8 pt-8">
+                <div class="how-it-works-section__card-image px-8 pt-8">
                     <li class="text-[20px] font-medium pb-4">Interviewer background</li>
                     <img src="./images/interview-image-2.svg" alt="Interview item image">
                 </div>
             </div>
-            <div class="card">
-                <div class="card-info">
-                    <h3 class="third-title">Schedule at Your Convenience</h3>
-                    <p class="text-size">Book your interview at a time that suits you, with flexible scheduling to fit
+            <div class="how-it-works-section__card">
+                <div class="how-it-works-section__card-info">
+                    <h3 class="how-it-works-section__card-title">Schedule at Your Convenience</h3>
+                    <p class="how-it-works-section__card-text">Book your interview at a time that suits you, with
+                        flexible scheduling to fit
                         your routine.</p>
                     <div>
-                        <button class="apply-btn" type="submit">Apply now</button>
+                        <button class="primary-btn" type="submit">Apply now</button>
                     </div>
                 </div>
-                <div class="card-image py-8 px-12">
-                    <img class="rounded-[10px]" src="./images/interview-image-3.svg" alt="Interview item image">
+                <div class="how-it-works-section__card-image py-8 px-12">
+                    <img class="rounded-xl" src="./images/interview-image-3.svg" alt="Interview item image">
                 </div>
             </div>
-            <div class="card">
-                <div class="card-info">
-                    <h3 class="third-title">Get Detailed Feedback</h3>
-                    <p class="text-size">You'll receive personalized feedback highlighting strengths, areas for
+            <div class="how-it-works-section__card">
+                <div class="how-it-works-section__card-info">
+                    <h3 class="how-it-works-section__card-title">Get Detailed Feedback</h3>
+                    <p class="how-it-works-section__card-text">You'll receive personalized feedback highlighting
+                        strengths, areas for
                         improvement, and steps to enhance your skills.</p>
                     <div>
-                        <button class="apply-btn" type="submit">Apply now</button>
+                        <button class="primary-btn" type="submit">Apply now</button>
                     </div>
                 </div>
-                <div class="card-image py-12 px-8">
+                <div class="how-it-works-section__card-image py-12 px-8">
                     <img src="./images/interview-image-4.svg" alt="Interview item image">
                 </div>
             </div>
         </div>
     </div>
-    <!-- End of Interview section -->
+    <!-- End of How it works section -->
 
     <!-- Start of Statistics section -->
     <div class="container mx-auto">
-        <div class="flex flex-col xl:flex-row gap-[120px] mx-6 lg:px-8 py-10">
-            <div class="flex flex-col gap-10 justify-evenly">
-                <div>
-                    <h2 class="text-[30px] lg:text-[48px] font-semibold pb-[40px]">Unlock a <span
-                            class="text-[#05a105]">Higher</span>
-                        Salarie
-                    </h2>
-                    <p class="font-medium text-[15px] leading-5">Students who prepare with InterviewPro succeed in
-                        landing their dream tech jobs. Our targeted
-                        mock
-                        interviews and expert feedback equip candidates with the confidence and skills they need to
-                        secure
-                        top offers and elevate their career prospects.</p>
+        <div class="statistics-section">
+            <div class="statistics-section__info-container">
+                <div class="flex flex-col gap-2 lg:gap-5">
+                    <h2 class="primary-title">Unlock a <span class="text-customGreen">Higher</span> Salarie</h2>
+                    <p class="statistics-section__text">
+                        Students who prepare with InterviewPro succeed in landing their dream tech jobs. Our targeted
+                        mock interviews and expert feedback equip candidates with the confidence and skills they need to
+                        secure top offers and elevate their career prospects.</p>
                 </div>
-                <div class="flex gap-14">
+                <div class="flex justify-between gap-10 lg:gap-32">
                     <div>
-                        <h3 class="font-medium text-[25px] lg:text-[38px] text-[#03390F]">$200k</h3>
-                        <p class="font-medium text-15 text-[#373531]">Average annual salary achieved by a student using
-                            InterviewPro.</p>
+                        <h2 class="statistics-section__numeric-info">$200k</h2>
+                        <p class="statistics-section__numeric-info-text">
+                            Average annual salary achieved by a student using InterviewPro.</p>
                     </div>
                     <div>
-                        <h3 class="font-medium text-[25px] lg:text-[38px] text-[#03390F]">84%</h3>
-                        <p class="font-medium text-15 text-[#373531]">Success rate in landing a job after completing
-                            multiple mock interviews.</p>
+                        <h2 class="statistics-section__numeric-info">84%</h2>
+                        <p class="statistics-section__numeric-info-text">
+                            Success rate in landing a job after completing multiple mock interviews.</p>
                     </div>
                 </div>
             </div>
-            <div
-                class="flex flex-col gap-10 bg-[#F4F2F0] py-5 pl-8 pr-5 lg:pr-[130px] border-[1px] border-[#CCCCCC] rounded-[15px]">
-                <div>
-                    <h4 class="text-[24px] font-medium text-[#03390F]">Technical interview success rate</h4>
+            <div class="statistics-section__card">
+                <h4 class="statistics-section__card-title">Technical interview success rate</h4>
+                <div class="flex flex-col gap-2 lg:gap-6">
+                    <div class="statistics-section__graph">
+                        <h4 class="statistics-section__graph-title text-customGreen">Interview Pro</h4>
+                        <div class="w-3/4">
+                            <p class="statistics-section__graph-info w-[80%] bg-customGreen">32.5%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h4 class="statistics-section__graph-title text-[#03390f]">Interview Prep <br>Programs</h4>
+                        <div class="w-3/4">
+                            <p class="statistics-section__graph-info w-[50%] bg-[#525252]">20%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h4 class="statistics-section__graph-title text-[#03390f]">LeetCode</h4>
+                        <div class="w-3/4">
+                            <p class="statistics-section__graph-info w-[30%] bg-[#525252]">12%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <h4 class="statistics-section__graph-title text-[#03390f]">Bootcapms</h4>
+                        <div class="w-3/4">
+                            <p class="statistics-section__graph-info w-[15%] pr-0 justify-center bg-[#525252]">5.4%</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-6">
-                    <div class="statistics-items">
-                        <h5 class="statistics-item text-[#05a105]">Interview Pro</h5>
-                        <p class="statistics-graph w-[250px] lg:w-[355px] bg-[#05a105]">32.5%</p>
-                    </div>
-                    <div class="statistics-items">
-                        <h5 class="statistics-item pt-[10px] leading-5">Interview Prep Programs</h5>
-                        <p class="statistics-graph w-[164px]">20%</p>
-                    </div>
-                    <div class="statistics-items">
-                        <h5 class="statistics-item">LeetCode</h5>
-                        <p class="statistics-graph w-[90px]">12%</p>
-                    </div>
-                    <div class="statistics-items">
-                        <h5 class="statistics-item">Bootcamps</h5>
-                        <p class="statistics-graph w-[60px] text-center pl-3">5.4%</p>
-                    </div>
-                </div>
-                <div>
-                    <p class="font-medium text-[12px]">Comparison metrics are averages and may not reflect all users
-                        experiences.</p>
-                </div>
+                <p class="statistics-section__card__footer-text">Comparison metrics are averages and may not
+                    reflect all users experiences.</p>
             </div>
         </div>
     </div>
     <!-- End of Statistics section -->
 
-    <!-- Rating section -->
+    <!-- Start of Our results section -->
     <div class="container mx-auto">
-        <div
-            class="flex flex-col gap-10 lg:gap-[100px] lg:mx-[60px] my-[100px] p-[50px] lg:p-[80px] rounded-[30px] bg-[#073630]">
-            <div class="flex flex-col items-center gap-8">
-                <h2 class="section-title text-white">Why choose us</h2>
-                <p class="text-[15px] font-medium text-center text-white">Get expert feedback, achieve
+        <div class="results-card">
+            <div class="results-info">
+                <h2 class="primary-title text-white">Why choose us</h2>
+                <p class="results-subtitle">Get expert feedback,
+                    achieve
                     higher salaries, and succeed faster with InterviewPro.</p>
-                <p
-                    class="text-[10px] lg:text-[15px] font-semibold rounded-[30px] py-[5px] px-5 text-white bg-[#1D4B45]">
+                <p class="results-rating">
                     <i class="fa-solid fa-star text-yellow-300"></i>
                     <i class="fa-solid fa-star text-yellow-300"></i>
                     <i class="fa-solid fa-star text-yellow-300"></i>
@@ -249,841 +248,837 @@
                     4.97/5 from over 800 reviews
                 </p>
             </div>
-            <div class="grid grid-cols-[auto_auto] lg:flex gap-[30px] lg:gap-[60px]">
-                <div class="flex flex-col gap-[6px] lg:gap-4 p-[10px]">
-                    <h2 class="text-[20px] lg:text-[38px] font-medium text-white">$500K</h2>
-                    <p class="text-[12px] lg:text-[15px] font-medium text-white">Highest annual salary achieved by a
-                        student using
+            <div class="results-statistics">
+                <div class="results__statistics-box">
+                    <h2 class="results__statistics-title">$500K</h2>
+                    <p class="results__statistics-info">Highest annual salary achieved by a student using InterviewPro.
+                    </p>
+                </div>
+                <div class="results__statistics-box">
+                    <h2 class="results__statistics-title">84%</h2>
+                    <p class="results__statistics-info">Success rate in landing a job after completing multiple mock
+                        interviews.</p>
+                </div>
+                <div class="results__statistics-box">
+                    <h2 class="results__statistics-title">41.2%</h2>
+                    <p class="results__statistics-info">Average increase in promotion rate within the first year for
+                        candidates who used InterviewPro.</p>
+                </div>
+                <div class="results__statistics-box">
+                    <h2 class="results__statistics-title">$15,000+</h2>
+                    <p class="results__statistics-info">Average increase in starting salary after preparing with
                         InterviewPro.</p>
                 </div>
-                <div class="flex flex-col gap-[6px] lg:gap-4 p-[10px]">
-                    <h2 class="text-[20px] lg:text-[38px] font-medium text-white">84%</h2>
-                    <p class="text-[12px] lg:text-[15px] font-medium text-white">Success rate in landing a job after
-                        completing
-                        multiple mock interviews.</p>
-                </div>
-                <div class="flex flex-col gap-[6px] lg:gap-4 p-[10px]">
-                    <h2 class="text-[20px] lg:text-[38px] font-medium text-white">41.2%</h2>
-                    <p class="text-[12px] lg:text-[15px] font-medium text-white">Average increase in promotion rate
-                        within the first
-                        year for candidates who used InterviewPro.</p>
-                </div>
-                <div class="flex flex-col gap-[6px] lg:gap-4 p-[10px]">
-                    <h2 class="text-[20px] lg:text-[38px] font-medium text-white">$15,000+</h2>
-                    <p class="text-[12px] lg:text-[15px] font-medium text-white">Average increase in starting salary
-                        after preparing
-                        with InterviewPro.</p>
-                </div>
             </div>
         </div>
     </div>
-    <!-- End of Rating section -->
+    <!-- End of Our results section -->
 
-    <!-- Start of Customers section -->
+    <!-- Start of Testimonials section -->
     <div class="container mx-auto" id="testimonials">
-        <div class="mx-14 pb-[50px]">
-            <h2 class="text-[25px] lg:text-[36px] font-medium pt-[50px]">Here's what our customers have <br> been saying
-            </h2>
+        <div class="testimonials-title">
+            <h2>Here's what our customers have <br> been saying</h2>
         </div>
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2 lg:gap-6">
             <div class="w-full overflow-x-scroll">
-                <div class="flex gap-5 w-fit">
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                <div class="flex gap-1.5 lg:gap-5 w-fit h-auto">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-full overflow-x-scroll">
-                <div class="flex gap-5 w-fit">
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                <div class="flex gap-1.5 lg:gap-5 w-fit">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col gap-4 w-[400px] bg-white p-[20px] rounded-[15px] border-[1px] border-gray-200">
-                        <div class="flex gap-4">
+                    <div class="testimonials-card">
+                        <div class="testimonials-info__container">
                             <div>
-                                <img class="w-[60px] h-auto rounded-[50%]" src="./images/cusomers-image.webp"
+                                <img class="testimonials-image" src="./images/cusomers-image.webp"
                                     alt="Customers image">
                             </div>
-                            <div>
-                                <h4 class="text-[15px] font-medium">Jordan K.</h4>
-                                <p class="text-[15px] font-normal text-gray-500">Software Developer</p>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
-                                <i class="fa-solid fa-star text-green-500"></i>
+                            <div class="testimonials-info">
+                                <div>
+                                    <h4 class="testimonials-name">Jordan K.</h4>
+                                    <p class="testimonials-profession">Software Developer
+                                    </p>
+                                </div>
+                                <div class="flex ">
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                    <i class="fa-solid fa-star text-green-500 text-[8px] lg:text-base"></i>
+                                </div>
                             </div>
                         </div>
                         <div>
-                            <p class="text-[16px] font-normal">“I was impressed by the professionalism of the
-                                interviewers
-                                and
-                                the quality of feedback.
-                                InterviewPro's platform made it easy to book and reschedule sessions, and the anonymous
-                                format
-                                was a great touch.”</p>
+                            <p class="testimonials-review">“I was impressed by the professionalism of
+                                the interviewers and the quality of feedback. InterviewPro's platform made it easy to
+                                book and reschedule sessions, and the anonymous format was a great touch.”</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End of Customers section -->
+    <!-- End of Testimonials section -->
 
-    <!-- Start of Plans section -->
-    <div class="container mx-auto my-[100px] flex flex-col">
-        <div class="flex flex-col items-center gap-4 px-[100px]">
-            <h2 class="section-title">Simple plans for all</h2>
-            <p class="text-[19px] font-normal text-center">Interview pro features plans to accommodate everyone from
-                <br> fresh graduates and junior engineers to
-                seasoned experts.
+    <!-- Start of Pricing section -->
+    <div class="pricing-section__container" id="pricing">
+        <div class="pricing-section__intro">
+            <h2 class="secondary-title">Simple plans for all</h2>
+            <p class="pricing-section__subtitle">Interview pro features plans to accommodate everyone from <br> fresh
+                graduates and junior engineers to seasoned experts.
             </p>
         </div>
-        <div
-            class="flex justify-evenly gap-7 lg:gap-[300px] mt-[50px] mx-3 lg:mx-auto bg-[#F4F2F0] p-[10px] lg:p-[30px] border-2 rounded-[20px]">
-            <div class="flex flex-col gap-[30px] lg:gap-[100px]">
-                <div>
-                    <h2 class="section-title">Pro</h2>
-                    <p class="hidden lg:block text-[15px] font-medium">Pay monthly, cancel anytime</p>
+        <div class="pricing-section__card lg:gap-72 bg-customCream">
+            <div class="pricing-section__card-info">
+                <div class="pricing-section__card-intro">
+                    <h2 class="primary-title">Pro</h2>
+                    <p class="pricing-section__card-subtitle">Pay monthly, cancel anytime</p>
                 </div>
-                <div>
-                    <p class="text-[12px] font-semibold">From</p>
-                    <h2 class="section-title pb-1">$2500</h2>
-                    <p class="text-[12px] font-semibold text-[#15130ECC] pb-5">Price in USD per month</p>
+                <div class="pricing-section__card-items">
+                    <p class="pricing-section__card-item-1">From</p>
+                    <h2 class="primary-title">$2500</h2>
+                    <p class="pricing-section__card-item-2 text-customDeepBrown">Price in
+                        USD per month</p>
                     <div>
-                        <button class="apply-btn" type="submit">Apply now</button>
+                        <button class="primary-btn" type="submit">Apply now</button>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2 lg:gap-[15px] bg-white p-5 rounded-[15px]">
-                <h4 class="text-[15px] font-semibold">Features:</h4>
-                <div class="flex gap-3">
-                    <img class="w-[15px] h-auto lg:w-6" src="./images/mark-icon__image.svg" alt="Icon image">
-                    <p class="text-[12px] lg:text-[15px] font-medium">Ideal if you're cramming for booked interviews</p>
+            <div class="pricing-section__features-box">
+                <h4 class="pricing-section__features-box__title">Features:</h4>
+                <div class="pricing-section__features-box__items">
+                    <img class="pricing-section__mark-icon" src="./images/mark-icon.svg" alt="Icon image">
+                    <p class="pricing-section__features-box__item">Ideal if you're cramming for booked interviews</p>
                 </div>
                 <hr>
-                <div class="flex gap-3">
-                    <img class="w-[15px] h-auto lg:w-6" src="./images/mark-icon__image.svg" alt="Icon image">
-                    <p class="text-[10px] lg:text-[15px] font-medium">No work eligibility / experience requirements</p>
+                <div class="pricing-section__features-box__items">
+                    <img class="pricing-section__mark-icon" src="./images/mark-icon.svg" alt="Icon image">
+                    <p class="pricing-section__features-box__item">No work eligibility / experience requirements</p>
                 </div>
                 <hr>
-                <div class="flex gap-3">
-                    <img class="w-[15px] h-auto lg:w-6" src="./images/mark-icon__image.svg" alt="Icon image">
-                    <p class="text-[10px] lg:text-[15px] font-medium">Flat monthly fee</p>
+                <div class="pricing-section__features-box__items">
+                    <img class="pricing-section__mark-icon" src="./images/mark-icon.svg" alt="Icon image">
+                    <p class="pricing-section__features-box__item">Flat monthly fee</p>
                 </div>
             </div>
         </div>
-        <div
-            class="flex justify-evenly lg:gap-[160px] mt-[50px] mx-3 lg:mx-auto bg-[#073630] p-[10px] lg:p-[30px] border-2 rounded-[20px]">
-            <div class="flex flex-col gap-[30px] lg:gap-[100px]">
-                <div>
-                    <h2 class="section-title text-white">Unlimited</h2>
-                    <p class="hidden lg:block text-[15px] font-medium text-white">Get unlimited support until you land a
-                        role, then <br> pay based on
-                        the gain we help you achieve.</p>
+        <div class="pricing-section__card lg:gap-40 bg-customDeepGreen">
+            <div class="pricing-section__card-info">
+                <div class="pricing-section__card-intro">
+                    <h2 class="primary-title text-white">Unlimited</h2>
+                    <p class="pricing-section__card-subtitle text-white">Get unlimited support until you land a role,
+                        then <br> pay based on the gain we help you achieve.</p>
                 </div>
-                <div>
-                    <p class="text-[12px] font-semibold text-white">Starts at</p>
-                    <h2 class="section-title pb-1 text-white">$5000</h2>
-                    <p class="text-[12px] w-[100px] lg:w-[100%] font-semibold text-[#FFFFFFD9] pb-5">down, then portion
-                        of salary gain</p>
+                <div class="pricing-section__card-items">
+                    <p class="pricing-section__card-item-1 text-white">Starts at</p>
+                    <h2 class="primary-title text-white">$5000</h2>
+                    <p class="pricing-section__card-item-2 text-customTransparentWhite">down, then portion of salary
+                        gain</p>
                     <div>
-                        <button class="apply-btn" type="submit">Apply now</button>
+                        <button class="primary-btn" type="submit">Apply now</button>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-[15px] bg-white p-5 rounded-[15px]">
-                <h4 class="text-[15px] font-semibold">Features:</h4>
-                <div class="flex gap-3">
-                    <img class="w-[15px] h-auto lg:w-6" src="./images/mark-icon__image.svg" alt="Icon image">
-                    <p class="text-[10px] lg:text-[15px] font-medium">Ideal if you're earlier in your job hunt</p>
+            <div class="pricing-section__features-box">
+                <h4 class="pricing-section__features-box__title">Features:</h4>
+                <div class="pricing-section__features-box__items">
+                    <img class="pricing-section__mark-icon" src="./images/mark-icon.svg" alt="Icon image">
+                    <p class="pricing-section__features-box__item">Ideal if you're earlier in your job hunt</p>
                 </div>
                 <hr>
-                <div class="flex gap-3">
-                    <img class="w-[15px] h-auto lg:w-6" src="./images/mark-icon__image.svg" alt="Icon image">
-                    <p class="text-[10px] lg:text-[15px] font-medium">Must be eligible to work in U.S. or Canada</p>
+                <div class="pricing-section__features-box__items">
+                    <img class="pricing-section__mark-icon" src="./images/mark-icon.svg" alt="Icon image">
+                    <p class="pricing-section__features-box__item">Must be eligible to work in U.S. or Canada</p>
                 </div>
                 <hr>
-                <div class="flex gap-3">
-                    <img class="w-[15px] h-auto lg:w-6" src="./images/mark-icon__image.svg" alt="Icon image">
-                    <p class="text-[10px] lg:text-[15px] font-medium">Incentive aligned, pay based on your salary gain
+                <div class="pricing-section__features-box__items">
+                    <img class="pricing-section__mark-icon" src="./images/mark-icon.svg" alt="Icon image">
+                    <p class="pricing-section__features-box__item">Incentive aligned, pay based on your salary gain
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End of Plans section -->
+    <!-- End of Pricing section -->
 
-    <!-- Start of Landed companies section -->
-    <div class="container mx-auto my-[150px]">
-        <div class="lg:mx-[100px] xl:mx-[350px] flex flex-col items-center gap-[100px]">
-            <div>
-                <h2 class="section-title text-center">Our clients Have landed jobs from <br> top companies in the world
-                </h2>
-            </div>
-            <div class="flex flex-wrap gap-10 justify-center">
-                <div>
-                    <img src="./images/company-image-1.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-2.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-3.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-4.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-5.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-6.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-7.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-8.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-9.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-10.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-11.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-12.svg" alt="Company brand image">
-                </div>
-                <div>
-                    <img src="./images/company-image-13.svg" alt="Company brand image">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Landed companies section -->
-
-    <!-- Start of Questions section -->
-    <div class="container mx-auto my-[100px]">
-        <h3 class="text-center text-[32px] font-medium mb-[50px]">Frequently Asked Questions</h3>
-        <div class="flex flex-col gap-5 mx-5 lg:mx-[40px] xl:mx-[250px]">
-            <div class="flex flex-col">
-                <div
-                    class="flex justify-between items-center lg:gap-[500px] bg-white px-[15px] rounded-tl-[10px] rounded-tr-[10px] border-[1px] border-gray-200">
-                    <p class="font-medium">What is InterviewPro?</p>
-                    <p class="text-[35px] text-[#05a105] pr-[20px]">-</p>
-                </div>
-                <div class="bg-white p-[15px] border-[1px] border-gray-200 rounded-bl-[10px] rounded-br-[10px]">
-                    <p class="font-normal text-[#4D4D4D] lg:pr-[100px]">Pour louer une voiture chez Cariago, vous devez
-                        être âgé d'au
-                        moins 21 ans, posséder un permis de
-                        conduire valide depuis au moins un an et fournir une pièce d'identité officielle.</p>
-                </div>
-            </div>
-            <div
-                class="flex justify-between items-center lg:gap-[500px] bg-white px-[15px] rounded-[10px] border-[1px] border-gray-200">
-                <p class="font-medium">Who will be my Interviewer?</p>
-                <p class="text-[35px] text-[#05a105] pr-[20px]">+</p>
-            </div>
-            <div
-                class="flex justify-between items-center lg:gap-[500px] bg-white px-[15px] rounded-[10px] border-[1px] border-gray-200">
-                <p class="font-medium">Who will be my Interviewer?</p>
-                <p class="text-[35px] text-[#05a105] pr-[20px]">+</p>
-            </div>
-            <div
-                class="flex justify-between items-center lg:gap-[500px] bg-white px-[15px] rounded-[10px] border-[1px] border-gray-200">
-                <p class="font-medium">Who will be my Interviewer?</p>
-                <p class="text-[35px] text-[#05a105] pr-[20px]">+</p>
-            </div>
-            <div
-                class="flex justify-between items-center lg:gap-[500px] bg-white px-[15px] rounded-[10px] border-[1px] border-gray-200">
-                <p class="font-medium">Who will be my Interviewer?</p>
-                <p class="text-[35px] text-[#05a105] pr-[20px]">+</p>
-            </div>
-        </div>
-    </div>
-    <!-- End of Questions section -->
-
-    <!-- Start of Invitation interview card section -->
+    <!-- Start of Top companies section -->
     <div class="container mx-auto">
-        <div
-            class="flex flex-col gap-5 lg:gap-10 bg-[#073630] relative py-[50px] lg:py-[120px] pl-[30px] lg:pl-[100px] mx-7 lg:mx-[100px] my-[100px] rounded-[30px]">
-            <h2 class="section-title text-white">Ready to Ace Your Next <br> <span class="text-[#05a105]">Tech
-                    Interview?</span></h2>
-            <p class="text-[15px] lg:text-[20px] font-normal text-[#D0D5DD]">Join InterviewPro today and start your
-                journey <br> toward landing your dream job.</p>
-            <div>
-                <button class="apply-btn" type="submit">Apply now</button>
+        <div class="top-companies__section">
+            <h2 class="primary-title text-center text-customCoal">Our clients Have landed jobs from <br> top companies
+                in the world
+            </h2>
+            <div class="top-companies__list">
+                <div>
+                    <img class="w-[66px] lg:w-[143px] top-companies__brand" src="./images/company-image-1.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[60px] lg:w-[128px] top-companies__brand" src="./images/company-image-2.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[51px] lg:w-[110px] top-companies__brand" src="./images/company-image-3.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[59px] lg:w-[127px] top-companies__brand" src="./images/company-image-4.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[37px] lg:w-[80px] top-companies__brand" src="./images/company-image-5.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[52px] lg:w-[113px] top-companies__brand" src="./images/company-image-6.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[63px] lg:w-[135px] top-companies__brand" src="./images/company-image-7.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[33px] lg:w-[72px] top-companies__brand" src="./images/company-image-8.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[80px] lg:w-[171px] top-companies__brand" src="./images/company-image-9.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[72px] lg:w-[156px] top-companies__brand" src="./images/company-image-10.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[61px] lg:w-[132px] top-companies__brand" src="./images/company-image-11.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[52px] lg:w-[111px] top-companies__brand" src="./images/company-image-12.svg"
+                        alt="Company brand image">
+                </div>
+                <div>
+                    <img class="w-[76px] lg:w-[163px] top-companies__brand" src="./images/company-image-13.svg"
+                        alt="Company brand image">
+                </div>
             </div>
-            <div class="absolute right-0 bottom-0 hidden lg:inline-block">
+        </div>
+    </div>
+    <!-- End of Top companies section -->
+
+    <!-- Start of FAQ section -->
+    <div class="container mx-auto my-8" id="faq">
+        <h3 class="faq-section__title">Frequently Asked Questions</h3>
+        <div class="faq-section">
+            <div class="flex flex-col">
+                <div class="faq-section__card rounded-bl-none rounded-br-none">
+                    <p class="faq-section__card-question">What is InterviewPro?</p>
+                    <p class="faq-section__toggle">-</p>
+                </div>
+                <div class="faq-section__card rounded-tl-none rounded-tr-none py-1 lg:py-2">
+                    <p class="faq-section__card-answer">Pour louer une voiture chez Cariago, vous devez être âgé d'au
+                        moins 21 ans, posséder un permis de conduire valide depuis au moins un an et fournir une pièce
+                        d'identité officielle.</p>
+                </div>
+            </div>
+            <div class="faq-section__card">
+                <p class="faq-section__card-question">How do I book a mock interview?</p>
+                <p class="faq-section__toggle">+</p>
+            </div>
+            <div class="faq-section__card">
+                <p class="faq-section__card-question">Who will be my Interviewer?</p>
+                <p class="faq-section__toggle">+</p>
+            </div>
+            <div class="faq-section__card">
+                <p class="faq-section__card-question">What kind of feedback will I receive?</p>
+                <p class="faq-section__toggle">+</p>
+            </div>
+            <div class="faq-section__card">
+                <p class="faq-section__card-question">Can I choose the topics or areas to focus on?</p>
+                <p class="faq-section__toggle">+</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of FAQ section -->
+
+    <!-- Start of CTA section -->
+    <div class="container mx-auto">
+        <div class="cta-section">
+            <h2 class="cta-section__title">Ready to Ace Your Next <br> <span class="text-customGreen">Tech
+                    Interview?</span></h2>
+            <p class="cta-section__subtitle">Join InterviewPro today and
+                start your journey <br> toward landing your dream job.</p>
+            <div>
+                <button class="primary-btn" type="submit">Apply now</button>
+            </div>
+            <div class="cta-section__background-image hidden lg:inline-block">
                 <img src="./images/card-line__image.svg" alt="Card line image">
             </div>
-            <div class="absolute right-0 bottom-0 lg:hidden">
+            <div class="cta-section__background-image lg:hidden">
                 <img src="./images/card-line__image-2.svg" alt="Card line image">
             </div>
         </div>
     </div>
-    <!-- End of Invitation interview card section -->
+    <!-- End of CTA section -->
 
     <!-- Start of Footer section -->
     <div class="container mx-auto">
-        <div
-            class="flex flex-col lg:flex-row gap-[50px] lg:gap-[400px] xl:gap-[800px] items-center lg:mx-[100px] pb-[50px]">
-            <div class="flex flex-col gap-5">
+        <div class="footer-section">
+            <div class="footer-section__info">
                 <div class="flex items-center gap-2">
                     <div>
                         <img src="./images/logo-image.svg" alt="Logo image">
                     </div>
-                    <h3 class="text-[18px] font-bold">InterviewPro</h3>
+                    <h4 class="text-lg font-bold font-archivo">InterviewPro</h4>
                 </div>
-                <p class="font-normal text-[#475467]">Design amazing digital experiences that <br> create more happy in
-                    the world.</p>
+                <p class="footer-section__text">Design amazing
+                    digital experiences that create more happy in the world.</p>
             </div>
-            <div class="flex gap-14">
-                <div class="list-none flex flex-col gap-2">
-                    <h4 class="text-[16px] font-semibold">Products</h4>
+            <div class="footer-section__menu-list">
+                <div class="footer-section__menu-items">
+                    <h4 class="footer-section__menu-title">Product</h4>
                     <li>
-                        <a class="font-medium text-[#475467]" href="#">Overview</a>
+                        <a class="footer-section__menu-link" href="#">Overview</a>
                     </li>
                     <li>
-                        <a class="font-medium text-[#475467]" href="#">Features</a>
+                        <a class="footer-section__menu-link" href="#">Features</a>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <a class="footer-section__menu-link" href="#">Cources</a>
+                        <span class="footer-section__link-item">New</span>
                     </li>
                     <li>
-                        <a class="font-medium text-[#475467]" href="#">Coursec</a>
-                    </li>
-                    <li>
-                        <a class="font-medium text-[#475467]" href="#">Testimonials</a>
+                        <a class="footer-section__menu-link" href="#">Testimonials</a>
                     </li>
                 </div>
-                <div class="list-none flex flex-col gap-2">
-                    <h4 class="text-[16px] font-semibold">Resources</h4>
+                <div class="footer-section__menu-items">
+                    <h4 class="footer-section__menu-title">Resources</h4>
                     <li>
-                        <a class="font-medium text-[#475467]" href="#">Blog</a>
+                        <a class="footer-section__menu-link" href="#">Blog</a>
                     </li>
                     <li>
-                        <a class="font-medium text-[#475467]" href="#">Newsletter</a>
+                        <a class="footer-section__menu-link" href="#">Newsletter</a>
                     </li>
                     <li>
-                        <a class="font-medium text-[#475467]" href="#">Support</a>
+                        <a class="footer-section__menu-link" href="#">Support</a>
                     </li>
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="flex flex-col lg:flex-row justify-between gap-10 py-[50px] mx-[90px] lg:mx-[100px]">
-            <p class="text-[#667085]">© 2024 InterviewPro. All rights reserved.</p>
-            <div class="flex gap-6 text-[#667085]">
+        <div class="footer-section__copyright">
+            <p class="footer-section__copyright-items">© 2024 InterviewPro. All rights reserved.</p>
+            <div class="flex gap-8 footer-section__copyright-items">
                 <a href="#">Terms</a>
                 <a href="#">Privacy</a>
                 <a href="#">Cookies</a>
