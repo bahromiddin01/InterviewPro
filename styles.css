@@ -299,7 +299,7 @@
     }
 
     .top-companies__list {
-        @apply flex flex-wrap gap-10 lg:gap-10 justify-center
+        @apply flex flex-wrap gap-8 lg:gap-10 justify-center
     }
 
     .top-companies__brand {

@@ -1791,7 +1791,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 @media (min-width: 1024px) {
@@ -2273,16 +2273,16 @@ video {
   float: inline-start;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .m-4 {
   margin: 1rem;
 }
 
 .m-8 {
   margin: 2rem;
-}
-
-.m-0 {
-  margin: 0px;
 }
 
 .-mx-14 {
