@@ -158,7 +158,7 @@
 
     /* Start of Our results section styles */
     .results-card {
-        @apply flex flex-col gap-10 lg:gap-24 mt-12 lg:my-24 p-10 lg:p-16 rounded-2xl bg-[#073639] lg:mx-16
+        @apply flex flex-col gap-10 lg:gap-24 mt-12 lg:my-24 p-4 lg:p-16 rounded-2xl bg-[#073639] lg:mx-16
     }
 
     .results-info {
@@ -174,7 +174,7 @@
     }
 
     .results-statistics {
-        @apply grid grid-cols-[auto_auto] lg:flex gap-12 lg:gap-0 mx-5 lg:mx-0 lg:justify-evenly
+        @apply grid grid-cols-[auto_auto] lg:flex gap-12 lg:gap-0 m-8 lg:m-0 lg:justify-evenly
     }
 
     .results__statistics-box {
@@ -189,7 +189,7 @@
         @apply text-[12px] leading-4 lg:leading-5 lg:text-[15px] font-medium text-white font-roboto
     }
 
-    /* End of Our resultes section styles */
+    /* End of Our results section styles */
 
     /* Start of Testimonials section tyles */
     .testimonials-title {

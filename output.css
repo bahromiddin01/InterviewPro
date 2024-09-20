@@ -1272,7 +1272,7 @@ video {
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(7 54 57 / var(--tw-bg-opacity));
-  padding: 2.5rem;
+  padding: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -1336,8 +1336,7 @@ video {
 }
 
 .results-statistics {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin: 2rem;
   display: grid;
   grid-template-columns: auto auto;
   gap: 3rem;
@@ -1345,8 +1344,7 @@ video {
 
 @media (min-width: 1024px) {
   .results-statistics {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     display: flex;
     justify-content: space-evenly;
     gap: 0px;
@@ -1397,7 +1395,7 @@ video {
   }
 }
 
-/* End of Our resultes section styles */
+/* End of Our results section styles */
 
 /* Start of Testimonials section tyles */
 
@@ -2277,6 +2275,14 @@ video {
 
 .m-4 {
   margin: 1rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .-mx-14 {
@@ -3383,6 +3389,10 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -4216,6 +4226,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:m-0 {
+    margin: 0px;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
