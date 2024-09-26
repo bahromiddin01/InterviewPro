@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+@layer utilities {
+    .direction-rtl {
+        direction: rtl;
+    }
+
+    .direction-ltr {
+        direction: ltr;
+    }
+}
+
 @layer components {
     .primary-title {
         @apply text-xl lg:text-5xl font-medium font-roboto lg:leading-[56px]
@@ -43,6 +63,8 @@
     .navigation-section__login-buttons {
         @apply md:flex lg:gap-10 gap-4 items-center hidden
     }
+
+    /* End of Navigation section styles */
 
     /* Start of Header section styles */
     .header-section__info {
@@ -201,7 +223,7 @@
     }
 
     .testimonials-card {
-        @apply flex flex-col gap-4 w-[200px] h-[130px] lg:h-auto lg:w-[400px] bg-white p-2 lg:p-5 rounded-[12px] border-[1px] border-gray-200
+        @apply direction-ltr flex flex-col gap-4 w-[200px] h-[130px] lg:h-auto lg:w-[400px] bg-white p-2 lg:p-5 rounded-[12px] border border-gray-200
     }
 
     .testimonials-info__container {
@@ -411,11 +433,3 @@
     
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-* {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
