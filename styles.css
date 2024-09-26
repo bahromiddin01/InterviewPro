@@ -9,17 +9,6 @@
 * {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-
-@layer utilities {
-    .direction-rtl {
-        direction: rtl;
-    }
-
-    .direction-ltr {
-        direction: ltr;
-    }
 }
 
 @layer components {
@@ -223,7 +212,7 @@
     }
 
     .testimonials-card {
-        @apply direction-ltr flex flex-col gap-4 w-[200px] h-[130px] lg:h-auto lg:w-[400px] bg-white p-2 lg:p-5 rounded-[12px] border border-gray-200
+        @apply flex flex-col gap-4 w-[200px] h-[130px] lg:h-auto lg:w-[400px] bg-white p-2 lg:p-5 rounded-[12px] border-[1px] border-gray-200
     }
 
     .testimonials-info__container {
